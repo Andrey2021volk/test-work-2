@@ -3,6 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <title>Document</title>
+    <style>
+      /* Можно обратиться к селекторам тега нескольким черз запятую */
+      h1,
+      h3 {
+        color: red;
+      }
+      #heading {
+        color: blue;
+      }
+      .format {
+        color: rgb(0, 255, 42);
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <h1>heading1</h1>
+    <h2>heading2</h2>
+    <h2 id="heading" class="format" style="color: yellow">heading3</h2>
+    <h2 class="format">heading4</h2>
+    <h2 class="format">heading5</h2>
+    <h6 class="format">heading6</h6>
+  </body>
 </html>
